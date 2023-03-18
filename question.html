@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme= "cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QNA</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="mt-8">
+    <h1 class="text-5xl text-center">Question and Answer</h1>
+  </header>
+
+  <main>
+    <section class="mt-8 grid lg:grid-cols-2 gap-4 px-5 lg:px-8">
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+          <span class="text-2xl font-bold">No-01</span> What is DOM and what is the purpose of DOM?
+        </div>
+        <div class="collapse-content"> 
+          <p>DOM stands for <span class="text-2xl font-bold">Document Object Model</span>, which is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree-like structure, where each element of the document is represented by a node in the tree.
+          </p>
+          <br>
+          <p><span class="text-2xl font-bold bg-yellow-500">The purpose of the DOM:</span> is to provide a way for programs and scripts to dynamically access and update the content, structure, and style of a web page. Using the DOM, you can manipulate the elements and properties of a web page using programming languages ​​such as JavaScript, allowing you to create interactive and dynamic web applications.
+          </p>
+          <br>
+          <p>For example, the DOM specifies that the querySelectorAll method in this code snippet must return a list of all the <p> elements in the document:</p>
+          <br>
+          <p>const paragraphs = document.querySelectorAll("p");
+            // paragraphs[0] is the first <p> element
+            // paragraphs[1] is the second <p> element, etc.
+            alert(paragraphs[0].nodeName);
+            </p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-4">
+        <div class="collapse-title text-xl font-medium">
+          <span class="text-2xl font-bold">No-02</span>  How will you select HTML elements using DOM? Name the DOM methods?
+        </div>
+        <div class="collapse-content"> 
+          <p>To select HTML elements using the Document Object Model (DOM), I use a variety of methods provided by the DOM API. Here are some commonly used DOM methods for selecting HTML elements:</p>
+          <br>
+          <p>getElementById(): Selects an element with a specific ID attribute.
+            getElementsByClassName(): Selects all elements that have a specific class name.
+            getElementsByTagName(): Selects all elements with a specific tag name.
+            querySelector(): Selects the first element that matches a specific CSS selector.
+            querySelectorAll(): Selects all elements that match a specific CSS selector.</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-4">
+        <div class="collapse-title text-xl font-medium">
+          <span class="text-2xl font-bold">No-03</span> What is event bubble?
+        </div>
+        <div class="collapse-content"> 
+          <p>Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.This is the default behavior of events on elements unless you stop the propagation</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mt-4">
+        <div class="collapse-title text-xl font-medium">
+         <span class="text-2xl font-bold">No-04</span> What is a callback function and why will you use it?
+        </div>
+        <div class="collapse-content"> 
+          <p>A callback function is one of the superpowers of JavaScript. It is the way JavaScript passes a function into another function as an argument. The callback function is called in the outer function to execute an action.
+            Arguments in JavaScript are values that are passed to the parameters of a function. They are accessible only in the function they are passed into when that function is called. Think of parameters as variables that are used to hold values in a function.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
